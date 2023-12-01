@@ -1,0 +1,1 @@
+For projectile motion model you need to download the model file and add it to the folder of models to make it run.
