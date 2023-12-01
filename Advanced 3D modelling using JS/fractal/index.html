@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractal Taran Demo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Explanation and input container -->
+  <div id="explanation">
+    <!-- Welcome message and instructions -->
+    <p>Welcome to the Fractal Taran Demo!</p>
+    <p>Adjust the <strong>Levels</strong> and <strong>Color</strong> to explore the fractal.</p>
+    <p><strong>Levels:</strong> Specifies the depth of recursion. Higher levels create more detailed structures.</p>
+    <p><strong>Color:</strong> Choose the base color of the fractal.</p>
+    <p>This demo uses recursive subdivision to generate a fractal structure. Enjoy exploring!</p>
+  </div>
+
+  <div id="input-container">
+    <!-- Input fields for adjusting levels and color -->
+    <label for="levelInput">Levels:</label>
+    <input type="number" id="levelInput" value="1" min="1" max="10">
+    
+    <label for="colorInput">Color:</label>
+    <input type="color" id="colorInput" value="#00ff00">
+  </div>
+
+  <!-- Container for the 3D scene -->
+  <div id="container"></div>
+
+  <!-- External scripts for Three.js library and custom script -->
+  <script src="https://threejs.org/build/three.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superellipsoid Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container for the 3D canvas rendering -->
+    <div id="canvas-container"></div>
+
+    <!-- Container for user interface controls -->
+    <div id="ui-container">
+        <!-- Slider for adjusting X Dimension -->
+        <div>
+            <label for="paramA">X Dimension (Scale along x):</label>
+            <input type="range" id="paramA" min="0.1" max="3" step="0.1" value="2">
+        </div>
+        <!-- Slider for adjusting Y Dimension -->
+        <div>
+            <label for="paramB">Y Dimension (Scale along y):</label>
+            <input type="range" id="paramB" min="0.1" max="3" step="0.1" value="2">
+        </div>
+        <!-- Slider for adjusting Z Dimension -->
+        <div>
+            <label for="paramC">Z Dimension (Scale along z):</label>
+            <input type="range" id="paramC" min="0.1" max="3" step="0.1" value="2">
+        </div>
+        <!-- Slider for adjusting Shape Control for X and Y -->
+        <div>
+            <label for="paramN">Shape Control for X and Y (Exponent for x and y):</label>
+            <input type="range" id="paramN" min="0.1" max="3" step="0.1" value="2">
+        </div>
+        <!-- Slider for adjusting Shape Control for Z -->
+        <div>
+            <label for="paramM">Shape Control for Z (Exponent for z):</label>
+            <input type="range" id="paramM" min="0.1" max="3" step="0.1" value="2">
+        </div>
+        <!-- Button for resetting parameters -->
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <!-- Container for displaying information about the superellipsoid -->
+    <div id="info-container">
+        <!-- Heading for superellipsoid information -->
+        <h3>Superellipsoid Information</h3>
+        <!-- Paragraph for displaying equations -->
+        <p id="equations">
+            Equations will be displayed here.
+        </p>
+        <!-- Paragraph for displaying parameter information -->
+        <p id="parameterInfo">
+            Parameter information will be displayed here.
+        </p>
+    </div>
+
+    <!-- Include the JavaScript file for controlling the 3D scene -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

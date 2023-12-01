@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced 3D Modeling using JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700,800,900&display=swap">
+    <style>
+        /* Additional CSS for the title */
+        #page-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: #fff; /* White text color */
+            z-index: 1000; /* Ensure the title is on top */
+            text-align: center; /* Center-align the text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./Public/stars.png" id="stars">
+        <img src="./Public/moon.png" id="moon">
+        <img src="./Public/mountains_behind.png" id="mountains_behind">
+        
+        <!-- Updated title element -->
+        <h1 id="page-title">Advanced 3D Modeling 
+            using JS</h1>
+        
+        <h2 id="text">Adios !</h2>
+        <a href="#sec" id="btn" onclick="showButtons()">Explore</a>
+        
+        <img src="./Public/mountains_front.png" id="mountains_front">
+        <div class="btn-box" id="btnBox">
+            <a href="#" onclick="loadFolder('Projectile Motion')">Projectile Motion</a>
+            <a href="#" onclick="loadFolder('Superellipsoid')">Superellipsoid</a>
+            <a href="#" onclick="loadFolder('Fractal')">Fractal</a>
+        </div>
+    </section>
+    <div class="sec" id="sec">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>
+            <!-- Your content goes here -->
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function loadFolder(folderName) {
+            window.location.href = `./${folderName.toLowerCase().replace(/\s+/g, '_')}/index.html`;
+        }
+    </script>
+</body>
+</html>
